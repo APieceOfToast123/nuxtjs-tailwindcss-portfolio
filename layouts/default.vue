@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="bg-secondary-light dark:bg-primary-dark min-h-screen flex flex-col"
-  >
+  <div class="layout">
     <!-- App header -->
     <AppHeader />
 
@@ -14,20 +12,7 @@
     <AppFooter />
 
     <!-- Go back to top when scrolled down -->
-    <div
-      class="
-        flex
-        space-x-2
-        mr-8
-        mb-6
-        right-0
-        bottom-0
-        z-50
-        fixed
-        items-center
-        sm:space-x-4
-      "
-    >
+    <div class="back-to-top">
       <BackToTop />
     </div>
   </div>
@@ -38,12 +23,8 @@ import feather from "feather-icons";
 import AppHeader from "../components/shared/AppHeader.vue";
 import AppFooter from "../components/shared/AppFooter.vue";
 import BackToTop from "../components/BackToTop.vue";
+
 export default {
-  data: () => {
-    return {
-      // Todo
-    };
-  },
   mounted() {
     feather.replace();
   },
@@ -52,6 +33,13 @@ export default {
 </script>
 
 <style>
+.layout {
+  background: linear-gradient(to bottom, #013480, #0064d6); 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
 .vue-back-to-top {
   @apply p-2 sm:p-4 bg-indigo-500 hover:bg-indigo-600 text-white;
   border-radius: 50%;
@@ -89,6 +77,21 @@ export default {
   to {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+
+.back-to-top {
+  display: flex;
+  space-x: 2;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  align-items: center;
+  @media (min-width: 640px) {
+    space-x: 4;
   }
 }
 </style>

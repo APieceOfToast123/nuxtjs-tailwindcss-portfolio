@@ -1,4 +1,8 @@
 export default {
+  server: {
+    host: '0.0.0.0',
+    port: 3000
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
   colorMode: {

@@ -43,7 +43,7 @@ export default {
           uppercase
         "
       >
-        Hi, Iam Stoman
+        Hi, We Are WMUG
       </h1>
       <p
         class="
@@ -58,7 +58,7 @@ export default {
           text-gray-400
         "
       >
-        A Full-Stack Developer & Design Enthusiast
+        A Game Development Group Organized by WKU Alumni
       </p>
       <div class="flex justify-center sm:block">
         <a

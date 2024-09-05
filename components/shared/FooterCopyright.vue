@@ -4,8 +4,8 @@ import { mapState } from "vuex";
 export default {
   data: () => {
     return {
-      projectName: "Nuxt.js & Tailwind CSS Portfolio",
-      author: "Stoman",
+      projectName: "WemaKeUgames",
+      author: "YuqiQin",
     };
   },
   computed: {
