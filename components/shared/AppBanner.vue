@@ -43,7 +43,7 @@ export default {
           uppercase
         "
       >
-        Hi, We Are WMUG
+        Hi, We Are WeMUG
       </h1>
       <p
         class="
@@ -58,9 +58,9 @@ export default {
           text-gray-400
         "
       >
-        A Game Development Group Organized by WKU Alumni
+        A Game Development Group Organized by WKU Alumni, Determined to Help Each Other and Share Industry Information.
       </p>
-      <div class="flex justify-center sm:block">
+      <!-- <div class="flex justify-center sm:block">
         <a
           href="/Stoman-Resume.pdf"
           download=""
@@ -97,7 +97,7 @@ export default {
             >Download CV</span
           ></a
         >
-      </div>
+      </div> -->
     </div>
 
     <!-- Banner right illustration -->

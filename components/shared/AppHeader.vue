@@ -2,15 +2,20 @@
   <header class="layout">
     <!-- Header content -->
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <!-- Logo -->
       <div class="logo text-xl font-bold">
         <NuxtLink to="/" class="text-current">WemaKeUgames</NuxtLink>
       </div>
-      <nav class="flex space-x-4">
-        <NuxtLink to="/" class="text-current hover:text-orange-light">Home</NuxtLink>
-        <NuxtLink to="/about" class="text-current hover:text-orange-light">About</NuxtLink>
-        <NuxtLink to="/projects" class="text-current hover:text-orange-light">Projects</NuxtLink>
-        <NuxtLink to="/contact" class="text-current hover:text-orange-light">Contact</NuxtLink>
+
+      <!-- Navigation -->
+      <nav class="flex space-x-4 ml-auto">
+        <NuxtLink to="/" class="text-current hover:text-orange-light font-bold">Home</NuxtLink>
+        <NuxtLink to="/about" class="text-current hover:text-orange-light font-bold">Team</NuxtLink>
+        <NuxtLink to="/projects" class="text-current hover:text-orange-light font-bold">Projects</NuxtLink>
+        <NuxtLink to="/contact" class="text-current hover:text-orange-light font-bold">Contact</NuxtLink>
       </nav>
+
+      <!-- Social icons -->
       <div class="flex items-center space-x-4">
         <a href="#" class="text-current hover:text-orange-light">
           <i class="feather-icon icon-twitter"></i>
@@ -55,6 +60,10 @@ export default {
   border-radius: 4px;
   text-decoration: none;
   color: #073d74;
+  font-weight: bold;
+}
+
+nav a {
   font-weight: bold;
 }
 </style>
