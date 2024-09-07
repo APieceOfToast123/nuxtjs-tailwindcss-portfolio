@@ -1,14 +1,14 @@
 <template>
-  <header class="layout">
+  <header class="layout w-full">
     <!-- Header content -->
-    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-4 px-6">
       <!-- Logo -->
-      <div class="logo text-xl font-bold">
+      <div class="logo text-xl font-bold mb-4 md:mb-0">
         <NuxtLink to="/" class="text-current">WemaKeUgames</NuxtLink>
       </div>
 
       <!-- Navigation -->
-      <nav class="flex space-x-4 ml-auto">
+      <nav class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 ml-auto">
         <NuxtLink to="/" class="text-current hover:text-orange-light font-bold">Home</NuxtLink>
         <NuxtLink to="/about" class="text-current hover:text-orange-light font-bold">Team</NuxtLink>
         <NuxtLink to="/projects" class="text-current hover:text-orange-light font-bold">Projects</NuxtLink>
@@ -16,7 +16,7 @@
       </nav>
 
       <!-- Social icons -->
-      <div class="flex items-center space-x-4">
+      <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
         <a href="#" class="text-current hover:text-orange-light">
           <i class="feather-icon icon-twitter"></i>
         </a>
@@ -39,11 +39,12 @@ export default {
 
 <style scoped>
 .layout {
-  background: linear-gradient(to bottom, #ffd900, #fff36f); 
-  min-height: 7vh;
-  display: flex;
-  flex-direction: column;
-  color: #084a8b;
+  background: linear-gradient(to bottom, #ffd900, #f8ef91); 
+  min-height: 1vh; /* Adjust this value as needed */
+  height: auto;
+  color: #073d74;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .layout .feather-icon {

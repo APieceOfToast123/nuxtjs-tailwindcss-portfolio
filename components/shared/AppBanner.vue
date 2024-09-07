@@ -104,7 +104,7 @@ export default {
     <div class="w-full md:w-2/3 text-right float-right">
       <img
         v-if="this.$colorMode.value == 'dark'"
-        src="~/static/developer-dark.svg"
+        src="~/static/Group1.jpg"
         alt="Developer Dark"
       />
       <img v-else src="~/static/developer.svg" alt="Developer Light" />

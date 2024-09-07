@@ -1,25 +1,16 @@
 <script>
-import feather from "feather-icons";
-
+import AppBanner from "../components/shared/AppBanner.vue";
+import AppSlider from "../components/AppSlider.vue";
+import Button from "../components/reusable/Button.vue";
 export default {
-  name: "About",
   scrollToTop: true,
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
+  components: { AppBanner, AppSlider, Button },
 };
 </script>
 
 <template>
-  <div>
-    <AboutMe class="container mx-auto" />
-
-    <AboutCounter />
-
-    <AboutClients class="container mx-auto" />
+  <div class="container mx-auto">
+    <AppSlider />
   </div>
 </template>
 

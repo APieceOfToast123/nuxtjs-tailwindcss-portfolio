@@ -24,7 +24,7 @@ export default {
       "
     >
       &copy; {{ copyrightDate }}.
-      <a
+      <!-- <a
         href="https://github.com/realstoman/nuxtjs-tailwindcss-portfolio"
         target="__blank"
         class="
@@ -34,7 +34,8 @@ export default {
           duration-500
         "
         >{{ projectName }}</a
-      >
+      > -->
+      <NuxtLink to="/" class="text-current">WemaKeUgames</NuxtLink>
       . Developed by
       <a
         href="https://stoman.me"

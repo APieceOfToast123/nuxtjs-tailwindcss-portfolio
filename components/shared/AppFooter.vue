@@ -45,9 +45,9 @@ export default {
             mb-5
           "
         >
-          Follow us
+          Welcome to Join Us! ;D
         </p>
-        <ul class="flex gap-4 sm:gap-8">
+        <!-- <ul class="flex gap-4 sm:gap-8">
           <a
             v-for="social in socialProfiles"
             :key="social.id"
@@ -69,7 +69,7 @@ export default {
           >
             <i :data-feather="social.icon" class="w-6 sm:w-8 h-6 sm:h-8"></i>
           </a>
-        </ul>
+        </ul> -->
       </div>
 
       <!-- Footer copyright -->
