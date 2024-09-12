@@ -35,11 +35,9 @@ export default {
 <template>
   <div
     class="
-      mt-10
-      pt-10
-      sm:pt-14 sm:mt-20
-      border-t-2 border-primary-light
-      dark:border-secondary-dark
+      mt-6
+      pt-6
+      sm:pt-10 sm:mt-14
     "
   >
     <p
@@ -49,8 +47,8 @@ export default {
         dark:text-primary-light
         text-3xl
         font-bold
-        mb-10
-        sm:mb-14
+        mb-6
+        sm:mb-10
         text-left
       "
     >

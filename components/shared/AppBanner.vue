@@ -1,22 +1,3 @@
-<script>
-import feather from "feather-icons";
-
-export default {
-  data: () => {
-    return {
-      // Todo
-    };
-  },
-
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
-};
-</script>
-
 <template>
   <section
     class="
@@ -26,10 +7,11 @@ export default {
       sm:flex-row
       mt-12
       sm:mt-10
+      px-4 sm:px-8
     "
   >
     <!-- Banner left contents -->
-    <div class="w-full md:w-1/3 text-left">
+    <div class="w-full md:w-1/3 text-left sm:pr-8">
       <h1
         class="
           font-general-semibold
@@ -40,7 +22,6 @@ export default {
           sm:text-left
           text-ternary-dark
           dark:text-primary-light
-          uppercase
         "
       >
         Hi, We Are WeMUG
@@ -48,68 +29,34 @@ export default {
       <p
         class="
           font-general-medium
-          mt-2
+          mt-4
           text-lg
-          sm:text-xl
-          xl:text-2xl
+          sm:text-base
+          xl:text-lg
           text-center
           sm:text-left
-          leading-none
+          leading-relaxed
           text-gray-400
         "
       >
         A Game Development Group Organized by WKU Alumni, Determined to Help Each Other and Share Industry Information.
       </p>
-      <!-- <div class="flex justify-center sm:block">
-        <a
-          href="/Stoman-Resume.pdf"
-          download=""
-          class="
-            flex
-            justify-center
-            items-center
-            w-36
-            sm:w-48
-            mt-12
-            mb-6
-            sm:mb-0
-            text-lg
-            border border-indigo-200
-            dark:border-ternary-dark
-            py-2.5
-            sm:py-3
-            shadow-lg
-            rounded-lg
-            bg-indigo-50
-            focus:ring-1 focus:ring-indigo-900
-            hover:bg-indigo-500
-            text-gray-500
-            hover:text-white
-            duration-500
-          "
-          aria-label="Download Resume"
-        >
-          <i
-            data-feather="arrow-down-circle"
-            class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
-          ></i>
-          <span class="text-sm sm:text-lg font-general-medium duration-100"
-            >Download CV</span
-          ></a
-        >
-      </div> -->
     </div>
 
     <!-- Banner right illustration -->
-    <div class="w-full md:w-2/3 text-right float-right">
+    <div class="w-full md:w-2/3 text-right sm:pl-8">
       <img
         v-if="this.$colorMode.value == 'dark'"
         src="~/static/Group1.jpg"
         alt="Developer Dark"
+        class="rounded-lg shadow-lg"
       />
-      <img v-else src="~/static/developer.svg" alt="Developer Light" />
+      <img
+        v-else
+        src="~/static/Group1.jpg"
+        alt="Developer Light"
+        class="rounded-lg shadow-lg"
+      />
     </div>
   </section>
 </template>
-
-<style lang="scss" scoped></style>

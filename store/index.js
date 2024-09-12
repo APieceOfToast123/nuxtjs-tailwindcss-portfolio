@@ -5,86 +5,91 @@ export const state = () => ({
   projectsDescription: "Some of the projects I have successfully completed",
   projects: [
     {
-      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
-      title: "Google Health Platform",
-      category: "Web Application",
-      img: "images/web-project-2.jpg",
-      publishDate: "Nov 04, 2021",
-      tag: "UI / Frontend",
-      clientTitle: "About Client",
-      objectivesTitle: "Objective",
-      objectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
-      techTitle: "Tools & Technologies",
-      detailsTitle: "Challenge",
+      id: "IFLL",
+      title: "Interstellar Frontier",
+      category: "Unreal Engin 5",
+      img: "images/IFLLProfile.jpg",
+      publishDate: "Jul 20, 2024",
+      tag: "Topdown / 3D",
+      clientTitle: "Activity",
+      objectivesTitle: "Developers",
+      objectivesDetails: `
+        <strong>Player Design & Coding:</strong> Reed Zhu<br>
+        <strong>Enemy Design & Coding:</strong> Guoqiang Zhao<br>
+        <strong>Boss Design & Coding:</strong> Andy Chen<br>
+        <strong>UI/UX:</strong> Yuqi Qin<br>
+        <strong>Technical Art:</strong> YuTian Lei<br>
+        <strong>Music and Scheme:</strong> Xinyue Fen<br><br>
+        Some assets/materials were sourced from free assets online, Unreal store, and AI-generated content.
+      `,
+      techTitle: "Platforms",
       socialTitle: "Share This",
+      detailsTitle: "Overview",
       projectImages: [
         {
           id: uuidv4(),
           title: "Uber Project Management UI",
-          img: "../images/ui-project-1.jpg",
+          img: "../images/IFLLMainMenu.jpg",
         },
         {
           id: uuidv4(),
           title: "Uber Project Management UI",
-          img: "../images/web-project-1.jpg",
+          img: "../images/IFLLRealGamePic.jpg",
         },
         {
           id: uuidv4(),
           title: "Uber Project Management UI",
-          img: "../images/web-project-2.jpg",
+          img: "../images/IFLLRealGamePic2.jpg",
         },
       ],
+      video:  "../videos/Interstellar Frontier.mp4",
       companyInfos: [
         {
           id: uuidv4(),
-          title: "Name",
-          details: "Company Ltd",
-        },
-        {
-          id: uuidv4(),
-          title: "Services",
-          details: "UI Design & Frontend Development",
-        },
-        {
-          id: uuidv4(),
-          title: "Website",
-          details: "https://company.com",
-        },
-        {
-          id: uuidv4(),
-          title: "Phone",
-          details: "555 8888 888",
+          title: "CIGA GameJam 2024",
+          details: "",
         },
       ],
       technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Nuxt.js",
-        "TailwindCSS",
-        "AdobeXD",
+        "Unreal Engine 5",
       ],
       projectDetails: [
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+          details: `
+            <strong>Interstellar Frontier: Limits and Limitless</strong> is a game that combines bullet-hell shooting with backpack resource management.
+          `,
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+          details: `
+            Players take on the role of a spaceship navigating through the galaxy, defeating hostile ships while journeying toward the edge of the galaxy.
+          `,
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+          details: `
+            The entire game mechanic revolves around the concepts of firepower and speed, requiring players to carefully balance the weight of their equipment with their movement speed. Carrying too much gear will limit the player's mobility, while insufficient firepower will leave them vulnerable to danger.
+          `,
+        },
+      ],
+      
+      instructionDetails: [
+        {
+          id: uuidv4(),
+          details: `"W,A,S,D" to Move`,
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+          details: `"Space" to Slow down time and collocate your weapon`,
+        },
+        {
+          id: uuidv4(),
+          details: `"Left Click" to select weapon and click again to an empty slot to equip`,
+        },
+        {
+          id: uuidv4(),
+          details: `"Right Click" on a filled slot to unequip the weapon`,
         },
       ],
       socialSharings: [
@@ -126,8 +131,8 @@ export const state = () => ({
       objectivesDetails:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
       techTitle: "Tools & Technologies",
-      detailsTitle: "Challenge",
       socialTitle: "Share This",
+      detailsTitle: "Overview",
       projectImages: [
         {
           id: uuidv4(),

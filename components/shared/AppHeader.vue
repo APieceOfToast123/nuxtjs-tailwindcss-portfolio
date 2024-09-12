@@ -9,10 +9,10 @@
 
       <!-- Navigation -->
       <nav class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 ml-auto">
-        <NuxtLink to="/" class="text-current hover:text-orange-light font-bold">Home</NuxtLink>
-        <NuxtLink to="/about" class="text-current hover:text-orange-light font-bold">Team</NuxtLink>
-        <NuxtLink to="/projects" class="text-current hover:text-orange-light font-bold">Projects</NuxtLink>
-        <NuxtLink to="/contact" class="text-current hover:text-orange-light font-bold">Contact</NuxtLink>
+          <NuxtLink to="/" class="text-lg text-current hover:text-orange-light font-bold">Home</NuxtLink>
+          <NuxtLink to="/about" class="text-lg text-current hover:text-orange-light font-bold">Team</NuxtLink>
+          <NuxtLink to="/projects" class="text-lg text-current hover:text-orange-light font-bold">Projects</NuxtLink>
+          <NuxtLink to="/contact" class="text-lg text-current hover:text-orange-light font-bold">Contact</NuxtLink>
       </nav>
 
       <!-- Social icons -->

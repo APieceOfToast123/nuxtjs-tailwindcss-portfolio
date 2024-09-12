@@ -12,7 +12,6 @@ export default {
   <div class="container mx-auto">
     <AppBanner />
     <AppSlider />
-
     <ProjectsGrid />
 
     <!-- View more projects button -->

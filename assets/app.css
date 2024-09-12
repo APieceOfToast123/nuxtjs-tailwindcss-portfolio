@@ -199,3 +199,8 @@
 .font-general-bold-italic {
   font-family: "GeneralSans-BoldItalic";
 }
+
+.single-project-right {
+  flex-direction: column; 
+  gap: 0;
+}

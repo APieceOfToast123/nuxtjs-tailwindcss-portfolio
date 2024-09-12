@@ -23,7 +23,7 @@
             </div>
 
             <div class="text-center mt-8">
-                <nuxt-link to="/team" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+                <nuxt-link to="/about" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
                     Learn More
                 </nuxt-link>
             </div>
@@ -36,17 +36,17 @@ export default {
     data() {
         return {
             teamMembers: [
-                { id: 1, name: 'Alice', role: 'Game Developer', image: '/QinYuqi2.jpg' },
-                { id: 2, name: 'Bob', role: '3D Artist', image: '/QinYuqi2.jpg' },
-                { id: 3, name: 'Qin Yuqi', role: 'Game Designer & Engineer', image: '/QinYuqi2.jpg' },
-                { id: 4, name: 'David', role: 'Sound Designer', image: '/QinYuqi2.jpg' },
-                { id: 5, name: 'Eve', role: 'Project Manager', image: '/QinYuqi2.jpg' },
-                { id: 6, name: 'Frank', role: 'Game Developer', image: '/QinYuqi2.jpg' },
-                { id: 7, name: 'Grace', role: '3D Artist', image: '/QinYuqi2.jpg' },
-                { id: 8, name: 'Hank', role: 'Game Designer', image: '/QinYuqi2.jpg' },
-                { id: 9, name: 'Ivy', role: 'Sound Designer', image: '/QinYuqi2.jpg' },
-                { id: 10, name: 'Jack', role: 'Project Manager', image: '/QinYuqi2.jpg' },
-                { id: 11, name: 'CZC', role: 'Project Manager', image: '/QinYuqi2.jpg' }
+                { id: 1, name: 'Zhang Chixue', role: 'Game Designer & Engineer', image: '/teams/ZhangChixue.jpg' },
+                { id: 2, name: 'Zhu Lianjie', role: 'Game Designer & Engineer', image: '/teams/ZhuLianjie.jpg' },
+                { id: 3, name: 'Hong Shuo', role: 'Game Designer & Engineer', image: '/teams/HongShuo.jpg' },
+                { id: 4, name: 'Qin Yuqi', role: 'Game Designer & Engineer', image: '/teams/QinYuqi1.jpg' },
+                { id: 5, name: 'Zhao Guoqiang', role: 'Game Designer & Engineer', image: '/teams/ZhaoGuoqiang.jpg' },
+                // { id: 6, name: 'Frank', role: 'Game Developer', image: '/QinYuqi2.jpg' },
+                // { id: 7, name: 'Grace', role: '3D Artist', image: '/QinYuqi2.jpg' },
+                // { id: 8, name: 'Hank', role: 'Game Designer', image: '/QinYuqi2.jpg' },
+                // { id: 9, name: 'Ivy', role: 'Sound Designer', image: '/QinYuqi2.jpg' },
+                // { id: 10, name: 'Jack', role: 'Project Manager', image: '/QinYuqi2.jpg' },
+                // { id: 11, name: 'CZC', role: 'Project Manager', image: '/QinYuqi2.jpg' }
             ]
         }
     }

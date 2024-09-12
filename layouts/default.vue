@@ -34,7 +34,7 @@ export default {
 
 <style>
 .layout {
-  background: linear-gradient(to bottom, #013480, #0064d6); 
+  background: linear-gradient(to bottom, #012c6d, #013480, #0064d6,#3f94f5); 
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
