@@ -96,6 +96,7 @@
                 font-general-regular
                 text-primary-dark
                 dark:text-ternary-light
+                text-lg
               ">
               {{ project.technologies.join(", ") }}
             </p>
@@ -106,7 +107,7 @@
             <p class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2">
               {{ project.objectivesTitle }}
             </p>
-            <p class="font-general-regular text-primary-dark dark:text-ternary-light text-xs"
+            <p class="font-general-regular text-primary-dark dark:text-ternary-light text-lg"
               v-html="project.objectivesDetails" style="line-height: 1.5;">
             </p>
           </div>
@@ -142,11 +143,12 @@
         <!-- Single project right section details -->
         <div class="single-project-right w-full sm:w-2/3 text-left mt-10 sm:mt-0">
           <!-- Original content -->
-          <p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7" style="line-height: 0.7;">
+          <p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
+            style="line-height: 0.7;">
             {{ project.detailsTitle }}
           </p>
-          <p v-for="projectDetail in project.projectDetails" :key="projectDetail.id" 
-            class="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light" 
+          <p v-for="projectDetail in project.projectDetails" :key="projectDetail.id"
+            class="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
             v-html="projectDetail.details">
           </p>
 
@@ -156,9 +158,11 @@
             <p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
               Instruction
             </p>
-            <ul class="list-disc pl-5 space-y-3">
-              <li v-for="instruction in project.instructionDetails" :key="instruction.id"
-                class="font-general-regular text-lg text-ternary-dark dark:text-ternary-light">
+            <ul class="pl-5 space-y-3">
+              <li v-for="instruction in project.instructionDetails" :key="instruction.id" :class="[
+                'font-general-regular text-lg text-ternary-dark dark:text-ternary-light',
+                instruction.isHeading ? 'font-bold text-xl list-none' : 'list-disc',
+              ]">
                 {{ instruction.details }}
               </li>
             </ul>
@@ -170,15 +174,13 @@
       <ProjectRelatedProjects />
 
       <!-- Comments section -->
-      <div 
-        class="
+      <div class="
           mt-6
           pt-6
           sm:pt-10 sm:mt-14
           border-t-2 border-primary-light
           dark:border-secondary-dark
-        "
-      >
+        ">
         <h3 class="mt-6 font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-4">
           Leave a Comment
         </h3>
@@ -292,13 +294,14 @@ export default {
   font-size: 0.875rem;
 }
 
-form input{
+form input {
   width: 20%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
 }
+
 form textarea {
   width: 100%;
   padding: 10px;
