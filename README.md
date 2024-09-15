@@ -70,7 +70,7 @@ yarn
 npm install --global yarn
 ```
 
-5. Start a local dev server at `http://localhost:3000`:
+5. Start a local dev server at `http://localhost:3030`:
 
 ```
 yarn dev
