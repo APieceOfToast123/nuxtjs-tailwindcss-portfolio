@@ -8,7 +8,7 @@ export default {
   components: { AppBanner, AppSlider, Button },
   data() {
     return {
-      isTransitioning: false, // 添加动画过渡控制
+      isTransitioning: false, // 动画过渡控制
     };
   },
   watch: {
@@ -17,17 +17,17 @@ export default {
       if (!this.isTransitioning) {
         this.isTransitioning = true;
         this.$nextTick(() => {
-          this.isTransitioning = false;
+          this.isTransitioning = false; // 动画结束后复位
         });
       }
     },
   },
   beforeRouteLeave(to, from, next) {
-    // 确保在离开路由前，先等待动画完成
+    // 等待过渡动画完成后离开页面
     if (this.isTransitioning) {
       setTimeout(() => {
         next();
-      }, 500); // 假设动画持续500ms
+      }, 500); // 假设动画时间为 500ms
     } else {
       next();
     }
@@ -50,24 +50,8 @@ export default {
     <div class="mt-5 sm:mt-14 flex justify-center">
       <NuxtLink
         to="/projects"
-        class="
-          font-general-medium
-          flex
-          items-center
-          px-6
-          py-3
-          rounded-lg
-          shadow-lg
-          hover:shadow-xl
-          bg-indigo-500
-          hover:bg-indigo-600
-          focus:ring-1 focus:ring-indigo-900
-          text-white text-lg
-          sm:text-xl
-          duration-300
-        "
+        class="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
         aria-label="More Projects"
-        @click="handleNavigation" 
       >
         <Button title="More Projects" />
       </NuxtLink>
