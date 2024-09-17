@@ -46,8 +46,8 @@ export default {
               <p style="font-size: 0.8em;">Love Cozy Games Like <em>Animal Crossing</em>, <em>Zelda</em>, <em>Stardew Valley</em>, <em>Rune Factory</em></p>
               <div>
                 <div class="image-row">
-                  <img src="/teams/QYQP.jpg" alt="Image 1" class="image" />
-                  <img src="/teams/QYQP.jpg" alt="Image 2" class="image" />
+                  <img src="/teams/info/QYQ1.jpg" alt="Image 1" class="image" />
+                  <img src="/teams/info/QYQ2.jpg" alt="Image 2" class="image" />
                 </div>
                 <style scoped>
                   .image-row {
