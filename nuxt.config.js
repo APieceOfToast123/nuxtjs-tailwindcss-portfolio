@@ -4,7 +4,7 @@ export default {
     port: process.env.PORT || 3030
   },
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: "server",
   colorMode: {
     classSuffix: "",
   },
