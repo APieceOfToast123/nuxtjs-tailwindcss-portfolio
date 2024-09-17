@@ -300,21 +300,6 @@ export const state = () => ({
       socialTitle: "Share This",
       detailsTitle: "Overview",
       projectImages: [
-        {
-          id: uuidv4(),
-          title: "Phoenix Digital Agency",
-          img: "../images/mobile-project-1.jpg",
-        },
-        {
-          id: uuidv4(),
-          title: "Phoenix Digital Agency",
-          img: "../images/web-project-2.jpg",
-        },
-        {
-          id: uuidv4(),
-          title: "Phoenix Digital Agency",
-          img: "../images/mobile-project-2.jpg",
-        },
       ],
       video: "../videos/TalesOfWheatFieldSummary.mp4",
       companyInfos: [
@@ -406,79 +391,85 @@ export const state = () => ({
       tag: "2D/Vertical",
       clientTitle: "Activity",
       objectivesTitle: "Developers",
-      objectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+      objectivesDetails: `
+        <strong>Programming:</strong> HOW4RD, SapphireStar, QinYuqi<br>
+        <strong>Art:</strong> Allie, UZUZ, Michelle_go<br>
+        <strong>Level & UI Design:</strong> Michelle_go, UZUZ<br>
+        <strong>Story script:</strong> cedaoan, H_Chloe
+      `,
       techTitle: "Tools & Technologies",
       detailsTitle: "Overview",
       socialTitle: "Share This",
       projectImages: [
         {
           id: uuidv4(),
-          title: "Cloud Storage Platform",
-          img: "../images/web-project-1.jpg",
+          title: "Hermes - Olympus Realm",
+          img: "../images/Hermes1.jpg",  
         },
         {
           id: uuidv4(),
-          title: "Cloud Storage Platform",
-          img: "../images/web-project-2.jpg",
+          title: "Hermes - Mortal World",
+          img: "../images/Hermes2.jpg",  
         },
         {
           id: uuidv4(),
-          title: "Cloud Storage Platform",
-          img: "../images/mobile-project-2.jpg",
+          title: "Hermes - Underworld",
+          img: "../images/Hermes3.jpg", 
         },
       ],
       video: "../videos/HermesSummary.mp4",
       companyInfos: [
         {
           id: uuidv4(),
-          title: "Name",
-          details: "Company Ltd",
-        },
-        {
-          id: uuidv4(),
-          title: "Services",
-          details: "UI Design & Frontend Development",
-        },
-        {
-          id: uuidv4(),
-          title: "Website",
-          details: "https://company.com",
-        },
-        {
-          id: uuidv4(),
-          title: "Phone",
-          details: "555 8888 888",
+          title: "Playable Link",
+          details: "https://ldjam.com/events/ludum-dare/53/hermes",
         },
       ],
       technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Nuxt.js",
-        "TailwindCSS",
-        "AdobeXD",
+        "Unity 2D",
+        "C#",
+        "Photoshop",
+        "Aseprite",
       ],
       projectDetails: [
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+          details: `
+            <strong>Hermes</strong> is a 2D vertical platformer based on Greek mythology. Players control Hermes, the messenger of the gods, tasked with delivering an important message from Zeus to Hades. The journey involves navigating through various realms and avoiding obstacles.
+          `,
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+          details: `
+            The game starts with Hermes jumping out of the sky, falling through different realms including Olympus, the mortal world, and the underworld. Hermes must avoid falling into the abyss and navigate through challenging platforms.
+          `,
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+          details: `
+            Along the way, Hermes will collect items such as the golden apple (which increases maximum health) and hearts (which recover health). The ultimate goal is to reach the underworld and deliver Zeus’s message to Hades.
+          `,
+        },
+      ],
+      instructionDetails: [
+        {
+          id: uuidv4(),
+          details: "HOW TO PLAY",
+          isHeading: true,
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+          details: "Use WASD to move and click to continue with dialogues.",
+        },
+        {
+          id: uuidv4(),
+          details: "Press Shift to activate Iris’s blessing, allowing you to teleport to any block.",
+        },
+        {
+          id: uuidv4(),
+          details: `
+            Avoid falling into the abyss or moving too slowly and touching the top of the screen. Make it to the end of each level to deliver the message to Hades.
+          `,
         },
       ],
       socialSharings: [
@@ -507,7 +498,7 @@ export const state = () => ({
           url: "https://instagram.com",
         },
       ],
-    },
+    },    
     {
       id: "SnapAdventure",
       title: "SnapAdventure",
@@ -621,86 +612,108 @@ export const state = () => ({
       ],
     },
     {
-      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccbb",
-      title: "Apple Design System",
-      category: "Web Application",
-      img: "images/web-project-1.jpg",
-      publishDate: "Nov 04, 2021",
-      tag: "UI / Mobile",
+      id: "PalFight",
+      title: "Pal Fight",
+      category: "2D FTG",
+      img: "images/profiles/PFProfile.jpg",
+      hoverVideo: "videos/PFProfile.mp4",
+      publishDate: "Jan 22, 2024",
+      tag: "2D / FTG",
       clientTitle: "Activity",
       objectivesTitle: "Developers",
-      objectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
-      techTitle: "Tools & Technologies",
-      detailsTitle: "Overview",
+      objectivesDetails: `
+        <strong>Design & Coding:</strong> Zhu Yunfeng<br>
+      `,
+      techTitle: "Platforms",
       socialTitle: "Share This",
+      detailsTitle: "Overview",
       projectImages: [
         {
           id: uuidv4(),
-          title: "Apple Design System",
-          img: "../images/web-project-1.jpg",
+          title: "Pal Fight Main Menu",
+          img: "../images/PFRealGamePic1.jpg",
         },
         {
           id: uuidv4(),
-          title: "Apple Design System",
-          img: "../images/web-project-2.jpg",
+          title: "Pal Fight Battle Scene",
+          img: "../images/PFRealGamePic2.jpg",
         },
         {
           id: uuidv4(),
-          title: "Apple Design System",
-          img: "../images/mobile-project-2.jpg",
+          title: "Pal Fight Funny Elements",
+          img: "../images/PFRealGamePic3.jpg",
         },
       ],
+      video: "../videos/PalFight.mp4",
       companyInfos: [
         {
           id: uuidv4(),
-          title: "Name",
-          details: "Company Ltd",
-        },
-        {
-          id: uuidv4(),
-          title: "Services",
-          details: "UI Design & Frontend Development",
-        },
-        {
-          id: uuidv4(),
-          title: "Website",
-          details: "https://company.com",
-        },
-        {
-          id: uuidv4(),
-          title: "Phone",
-          details: "555 8888 888",
+          title: "GGJ 2024",
+          details: "48 hours",
         },
       ],
       technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Nuxt.js",
-        "TailwindCSS",
-        "AdobeXD",
+        "Unity 2D",
       ],
       projectDetails: [
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+          details: `
+            <strong>Pal Fight</strong> is a PVP battle game created during the Global Game Jam 2024, hosted at the NYU site. 
+            The theme was <em>"make me laugh"</em>, and the game includes humorous elements to align with the theme. 
+            Players can swing weapons, block, and jump while engaging in battles designed to evoke laughter and competitive fun.
+          `,
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+          details: `
+            Pal Fight introduces unique mechanics such as the posture system, which prevents over-blocking by making players vulnerable if their posture meter fills up.
+            This encourages strategic gameplay as players must manage both attacking and defending efficiently.
+          `,
+        },
+      ],
+      instructionDetails: [
+        {
+          id: uuidv4(),
+          details: "Player 1:",
+          isHeading: true, 
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+          details: "A, D: Swing the weapon anticlockwise or clockwise",
         },
         {
           id: uuidv4(),
-          details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+          details: "W: Jump",
+        },
+        {
+          id: uuidv4(),
+          details: "S: Block",
+        },
+        {
+          id: uuidv4(),
+          details: "Player 2:",
+          isHeading: true, 
+        },
+        {
+          id: uuidv4(),
+          details: "←, →: Swing the weapon anticlockwise or clockwise",
+        },
+        {
+          id: uuidv4(),
+          details: "↑: Jump",
+        },
+        {
+          id: uuidv4(),
+          details: "↓: Block",
+        },
+        {
+          id: uuidv4(),
+          details: `
+            <strong>Tip:</strong> Block can reduce your opponent's damage when they attack you, but it will still increase your posture to a small extent. 
+            Press the block button just before your opponent hits you to deflect the attack and increase your opponent's posture significantly.
+            When the posture meter reaches its maximum, the player enters a weak state and cannot block, allowing the opponent to deal a death blow.
+          `,
         },
       ],
       socialSharings: [
@@ -729,60 +742,7 @@ export const state = () => ({
           url: "https://instagram.com",
         },
       ],
-    },
-  ],
-  clientsHeading: "Some of the brands I worked with",
-  clients: [
-    {
-      id: uuidv4(),
-      title: "Amazon",
-      img: "../brands/amazon_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "Sony",
-      img: "../brands/sony_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "Adidas",
-      img: "../brands/adidas_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "FILA",
-      img: "../brands/fila_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "NB",
-      img: "../brands/nb_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "SAMSUNG",
-      img: "../brands/samsung_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "CANON",
-      img: "../brands/canon_gray.png",
-    },
-    {
-      id: uuidv4(),
-      title: "PUMA",
-      img: "../brands/puma_gray.png",
-    },
-  ],
-  aboutMe: [
-    {
-      id: uuidv4(),
-      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
-    },
-    {
-      id: uuidv4(),
-      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
-    },
+    },    
   ],
   copyrightDate: new Date().getFullYear(),
   socialProfiles: [
