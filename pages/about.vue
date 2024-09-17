@@ -100,6 +100,10 @@ export default {
       defaultImage: '/default-profile.jpg', // 替换为默认的占位图片路径
     };
   },
+  beforeRouteLeave(to, from, next) {
+    // 立即跳转，不等待任何过渡动画或延迟
+    next();
+  }
 };
 </script>
 

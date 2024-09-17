@@ -26,6 +26,16 @@
   </section>
 </template>
 
+<script>
+export default {
+  // 如果有任何需要处理的路由逻辑, 比如 beforeRouteLeave 钩子, 可以在这里处理
+  beforeRouteLeave(to, from, next) {
+    // 直接调用 next()，不延迟跳转，确保页面立即跳转
+    next();
+  },
+};
+</script>
+
 <style scoped>
 .contact-section {
   background-color: transparent; /* Transparent background for section */
