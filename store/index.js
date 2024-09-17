@@ -7,7 +7,7 @@ export const state = () => ({
     {
       id: "IFLL",
       title: "Interstellar Frontier",
-      category: "Unreal Engin 5",
+      category: "Topdown / 3D",
       img: "images/profiles/IFLLProfile.jpg",
       hoverVideo: "videos/IFLLProfile.mp4",
       publishDate: "Jul 20, 2024",
