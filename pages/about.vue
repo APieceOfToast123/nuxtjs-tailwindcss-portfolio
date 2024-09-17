@@ -1,42 +1,3 @@
-<template>
-  <div class="container-wrapper">
-    <div class="container mx-auto">
-      <!-- 新板块：显示团队成员信息 -->
-      <section class="team-members-section mt-12">
-        <h2 class="text-center text-4xl font-bold text-primary-dark dark:text-primary-light mb-8">
-          Team members
-        </h2>
-
-        <!-- 成员信息框 -->
-        <div class="team-members-wrapper flex flex-col space-y-8">
-          <div v-for="(member, index) in teamMembers" :key="member.id"
-            class="member-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mx-auto w-full sm:w-3/4 lg:w-2/3 flex flex-col sm:flex-row items-center"
-            :class="{ 'flex-row-reverse': index % 2 !== 0 }">
-            
-            <!-- 头像部分 -->
-            <div class="w-full sm:w-1/3 text-center sm:text-left">
-              <img :src="member.image || defaultImage" alt="成员图片" class="w-40 h-40 rounded-full mx-auto mb-6">
-            </div>
-
-            <!-- 内容部分 -->
-            <div class="w-full sm:w-2/3 text-left mt-6 sm:mt-0">
-              <h3 class="text-3xl font-bold text-primary-dark dark:text-primary-light">{{ member.name }}</h3>
-              <p v-if="member.title" class="text-lg text-gray-600 dark:text-gray-400 mt-4">{{ member.title }}</p>
-              <p v-if="member.description" class="mt-4 text-gray-500 dark:text-gray-400">{{ member.description }}</p>
-              <div v-if="member.customContent" v-html="member.customContent" class="mt-4 text-gray-600 dark:text-gray-400"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- 图片墙 -->
-    <div class="container mx-auto">
-      <AppPhotoWall />
-    </div>
-  </div>
-</template>
-
 <script>
 import AppBanner from "../components/shared/AppBanner.vue";
 import AppPhotoWall from "../components/AppPhotoWall.vue";
@@ -81,7 +42,29 @@ export default {
           image: '/teams/QYQP.jpg',
           customContent: `
             <div>
-              <p>I'm nerd</p>
+              <p>Cozy Game Maker & King of Isekai Anime</p>
+              <p style="font-size: 0.8em;">Love Cozy Games Like <em>Animal Crossing</em>, <em>Zelda</em>, <em>Stardew Valley</em>, <em>Rune Factory</em></p>
+              <div>
+                <div class="image-row">
+                  <img src="/teams/QYQP.jpg" alt="Image 1" class="image" />
+                  <img src="/teams/QYQP.jpg" alt="Image 2" class="image" />
+                </div>
+                <style scoped>
+                  .image-row {
+                    display: flex;
+                    justify-content: space-between; 
+                    align-items: center;
+                    margin-top: 20px;
+                  }
+                  .image {
+                    width: 48%; 
+                    height: auto;
+                    border-radius: 8px; 
+                  }
+                </style>
+              </div>
+              <p>Currently Grad First Year in USC Game Dev</p>
+              <img src="/teams/QYQP.jpg" alt="Image 2" class="image" />              
               <a href="https://qinyuqi.portfoliobox.net/" class="text-blue-500 hover:text-blue-700">View my portfolio</a>
             </div>`,
         },
@@ -95,8 +78,18 @@ export default {
               <p>I'm junior</p>
             </div>`,
         },
+        {
+          id: 6,
+          name: 'Zhu Yunfeng',
+          title: 'Game Designer & Engineer',
+          image: '/teams/ZYFP.png',
+          customContent: `
+            <div>
+              <p>Gamer & Learner</p>
+              <a href="https://mark-zhu.myportfolio.com/" class="text-blue-500 hover:text-blue-700">View my portfolio</a>
+            </div>`,
+        },
       ],
-      // 默认头像
       defaultImage: '/default-profile.jpg', // 替换为默认的占位图片路径
     };
   },
@@ -106,6 +99,50 @@ export default {
   }
 };
 </script>
+<template>
+  <div class="container-wrapper">
+    <div class="container mx-auto">
+      <!-- 新板块：显示团队成员信息 -->
+      <section class="team-members-section mt-12">
+        <h2 class="text-center text-4xl font-bold text-primary-dark dark:text-primary-light mb-8">
+          Team members
+        </h2>
+
+        <!-- 成员信息框 -->
+        <div class="team-members-wrapper flex flex-col space-y-8">
+          <div v-for="(member, index) in teamMembers" :key="member.id"
+            class="member-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mx-auto w-full sm:w-3/4 lg:w-2/3 flex flex-col sm:flex-row items-center"
+            :class="{ 'flex-row-reverse': index % 2 !== 0 }">
+
+            <div class="w-full">
+              <!-- 头像部分 -->
+              <div class="w-full sm:w-1/3 text-center sm:text-left">
+                <img :src="member.image || defaultImage" alt="成员图片" class="w-45 h-45 rounded-full mx-auto mb-6">
+              </div>
+  
+              <!-- 内容部分 -->
+              <div class="w-full sm:w-2/3 text-left mt-6 sm:mt-0">
+                <h3 class="text-3xl font-bold text-primary-dark dark:text-primary-light">{{ member.name }}</h3>
+                <p v-if="member.title" class="text-lg text-gray-600 dark:text-gray-400 mt-4">{{ member.title }}</p>
+                <p v-if="member.description" class="mt-4 text-gray-500 dark:text-gray-400">{{ member.description }}</p>
+              </div>
+            </div>
+
+            <div v-if="member.customContent" v-html="member.customContent"
+              class="w-full mt-4 text-gray-600 dark:text-gray-400">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 图片墙 -->
+    <div class="container mx-auto">
+      <AppPhotoWall />
+    </div>
+  </div>
+</template>
+
 
 <style scoped>
 .team-members-section {
@@ -114,7 +151,7 @@ export default {
 }
 
 .member-card {
-  max-width: 800px; /* 限制每个卡片的最大宽度 */
+  max-width: 1000px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -134,7 +171,6 @@ img:hover {
   transform: scale(1.05);
 }
 
-/* 响应式调整：在小屏幕上保持列布局，大屏幕上交替布局 */
 @media (min-width: 640px) {
   .member-card {
     flex-direction: row;
