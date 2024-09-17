@@ -1,14 +1,3 @@
-<script>
-import AppBanner from "../components/shared/AppBanner.vue";
-import AppPhotoWall from "../components/AppPhotoWall.vue";
-import Button from "../components/reusable/Button.vue";
-
-export default {
-  scrollToTop: true,
-  components: { AppBanner, AppPhotoWall, Button },
-};
-</script>
-
 <template>
   <div class="container-wrapper">
     <div class="container mx-auto">
@@ -26,21 +15,22 @@ export default {
             
             <!-- 头像部分 -->
             <div class="w-full sm:w-1/3 text-center sm:text-left">
-              <img :src="member.image" alt="成员图片" class="w-40 h-40 rounded-full mx-auto mb-6">
+              <img :src="member.image || defaultImage" alt="成员图片" class="w-40 h-40 rounded-full mx-auto mb-6">
             </div>
 
             <!-- 内容部分 -->
             <div class="w-full sm:w-2/3 text-left mt-6 sm:mt-0">
               <h3 class="text-3xl font-bold text-primary-dark dark:text-primary-light">{{ member.name }}</h3>
-              <p class="text-lg text-gray-600 dark:text-gray-400 mt-4">{{ member.title }}</p>
-              <p class="mt-4 text-gray-500 dark:text-gray-400">{{ member.description }}</p>
-              <div v-html="member.customContent" class="mt-4 text-gray-600 dark:text-gray-400"></div>
+              <p v-if="member.title" class="text-lg text-gray-600 dark:text-gray-400 mt-4">{{ member.title }}</p>
+              <p v-if="member.description" class="mt-4 text-gray-500 dark:text-gray-400">{{ member.description }}</p>
+              <div v-if="member.customContent" v-html="member.customContent" class="mt-4 text-gray-600 dark:text-gray-400"></div>
             </div>
           </div>
         </div>
       </section>
     </div>
 
+    <!-- 图片墙 -->
     <div class="container mx-auto">
       <AppPhotoWall />
     </div>
@@ -48,7 +38,12 @@ export default {
 </template>
 
 <script>
+import AppBanner from "../components/shared/AppBanner.vue";
+import AppPhotoWall from "../components/AppPhotoWall.vue";
+import Button from "../components/reusable/Button.vue";
+
 export default {
+  components: { AppBanner, AppPhotoWall, Button },
   data() {
     return {
       // 成员数据
@@ -59,15 +54,12 @@ export default {
           title: 'Technical Director',
           description: 'Love Genshin Impact and Black Myth: Wukong',
           image: '/teams/ZCXP.jpg',
-          customContent: `
-            <div>
-            </div>`,
+          customContent: ``,
         },
         {
           id: 2,
           name: 'Zhu Lianjie',
           title: 'Game Designer & Engineer',
-          description: '',
           image: '/teams/ZLJP.jpg',
           customContent: `
             <div>
@@ -79,35 +71,24 @@ export default {
           id: 3,
           name: 'Hong Shuo',
           title: 'Game Designer & Engineer',
-          description: '',
           image: '/teams/HSP.jpg',
-          customContent: `
-            <div>
-              <p></p>
-            </div>`,
+          customContent: ``,
         },
-        { 
-          id: 4, 
-          name: 'Qin Yuqi', 
-          title: 'Game Designer & Engineer', 
-          description: '',
-          image: '/teams/QYQP.jpg', 
+        {
+          id: 4,
+          name: 'Qin Yuqi',
+          title: 'Game Designer & Engineer',
+          image: '/teams/QYQP.jpg',
           customContent: `
             <div>
-              <p>I'm nerd</p>
-              <p>I'm nerd</p>
-              <p>I'm nerd</p>
-              <p>I'm nerd</p>
-              <p>I'm nerd</p>
               <p>I'm nerd</p>
               <a href="https://qinyuqi.portfoliobox.net/" class="text-blue-500 hover:text-blue-700">View my portfolio</a>
             </div>`,
         },
-        { 
-          id: 5, 
-          name: 'Zhao Guoqiang', 
-          title: 'Game Designer & Engineer', 
-          description: '',
+        {
+          id: 5,
+          name: 'Zhao Guoqiang',
+          title: 'Game Designer & Engineer',
           image: '/teams/ZGQP.jpg',
           customContent: `
             <div>
@@ -115,6 +96,8 @@ export default {
             </div>`,
         },
       ],
+      // 默认头像
+      defaultImage: '/default-profile.jpg', // 替换为默认的占位图片路径
     };
   },
 };
@@ -122,7 +105,7 @@ export default {
 
 <style scoped>
 .team-members-section {
-  background-color: transparent; /* 背景透明 */
+  background-color: transparent;
   padding: 2rem 1rem;
 }
 

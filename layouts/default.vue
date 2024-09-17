@@ -37,6 +37,13 @@ export default {
   methods: {
     createBubbles() {
       const bubbleContainer = document.querySelector(".bubble-background");
+
+      // 如果 bubbleContainer 不存在，返回并避免错误
+      if (!bubbleContainer) {
+        console.error("找不到 .bubble-background 容器");
+        return;
+      }
+
       const numBubbles = 5; 
       const bubbles = [];
 
@@ -44,38 +51,42 @@ export default {
         let bubble = document.createElement("div");
         bubble.classList.add("bubble");
 
-        let size = Math.random() * 75 + 100; 
-        let x = Math.random() * window.innerWidth;
-        let y = window.innerHeight * (2 / 3) + Math.random() * (window.innerHeight / 2); 
-        let velocityY = (Math.random() + 0.1) * -0.2;
+        let size = Math.random() * 75 + 100; // 气泡大小
+        let x = Math.random() * window.innerWidth; // 随机 x 位置
+        let y = window.innerHeight * (2 / 3) + Math.random() * (window.innerHeight / 2); // 随机 y 位置
+        let velocityY = (Math.random() + 0.1) * -0.2; // 下降速度
 
         bubble.style.width = `${size}px`;
         bubble.style.height = `${size}px`;
         bubble.style.left = `${x}px`;
         bubble.style.top = `${y}px`;
 
+        // 保存气泡的状态
         bubbles.push({ element: bubble, x, y, size, velocityY });
-        bubbleContainer.appendChild(bubble);
+        bubbleContainer.appendChild(bubble); // 确保容器存在后附加气泡
       }
 
+      // 启动气泡动画
       this.animateBubbles(bubbles);
     },
 
     animateBubbles(bubbles) {
       const update = () => {
         bubbles.forEach((bubble) => {
-          bubble.y += bubble.velocityY;
+          bubble.y += bubble.velocityY; // 气泡上升
           bubble.element.style.left = `${bubble.x}px`;
           bubble.element.style.top = `${bubble.y}px`;
 
+          // 如果气泡超出视窗顶部，则重置位置
           if (bubble.y + bubble.size < 0) {
             bubble.y = window.innerHeight * (2 / 3) + Math.random() * (window.innerHeight / 2);
             bubble.x = Math.random() * window.innerWidth;
           }
         });
-        requestAnimationFrame(update);
+
+        requestAnimationFrame(update); // 循环动画
       };
-      requestAnimationFrame(update);
+      requestAnimationFrame(update); // 启动动画
     }
   },
   components: { AppFooter, BackToTop, AppHeader },
