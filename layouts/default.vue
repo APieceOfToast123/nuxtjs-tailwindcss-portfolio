@@ -123,7 +123,7 @@ export default {
   border-radius: 50%;
   opacity: 0.7;
   animation: rise infinite ease-in-out; 
-  animation-duration: 60s; /* 上升动画时间设置为60秒，减慢速度 */
+  animation-duration: 45s; /* 调整为 45 秒，稍微加快上浮速度 */
 }
 
 /* 泡泡上升动画 */
