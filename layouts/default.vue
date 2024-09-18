@@ -30,7 +30,6 @@ import BackToTop from "../components/BackToTop.vue";
 export default {
   mounted() {
     this.$nextTick(() => {
-      // 确保 DOM 已经完全渲染
       feather.replace();
       this.createBubbles();
     });
@@ -102,7 +101,6 @@ export default {
 </script>
 
 <style>
-/* 布局样式 */
 .layout {
   background: linear-gradient(to bottom, #012c6d, #013480, #0064d6, #2f8df9);
   min-height: 100vh;

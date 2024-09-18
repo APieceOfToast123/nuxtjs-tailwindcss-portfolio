@@ -56,16 +56,16 @@
         teamMembers: [
           {
             id: 1,
-            name: 'Zhang Chixue',
+            name: 'Chen Zhangchi',
             role: 'Game Designer & Engineer',
             image: '/teams/ZhangChixue.jpg'
           },
           {
             id: 2,
-            name: 'Zhu Lianjie',
+            name: 'Zhu Yunfeng',
             role: 'Game Designer & Engineer',
-            image: '/teams/ZhuLianjie.jpg',
-            website: 'http://www.reedzhu.com/'
+            image: '/teams/ZhuYunfeng.png',
+            website: 'https://mark-zhu.myportfolio.com/'
           },
           {
             id: 3,
@@ -82,10 +82,17 @@
           },
           {
             id: 5,
+            name: 'Zhu Lianjie',
+            role: 'Game Designer & Engineer',
+            image: '/teams/ZhuLianjie.jpg',
+            website: 'http://www.reedzhu.com/'
+          },
+          {
+            id: 6,
             name: 'Zhao Guoqiang',
             role: 'Game Designer & Engineer',
             image: '/teams/ZhaoGuoqiang.jpg'
-          }
+          },
         ]
       };
     },
