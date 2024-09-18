@@ -4,7 +4,7 @@ import { mapState } from "vuex";
 export default {
   data: () => {
     return {
-      projectName: "WemaKeUgames",
+      projectName: "WemaKeUGames",
       author: "YuqiQin",
     };
   },
@@ -35,7 +35,7 @@ export default {
         "
         >{{ projectName }}</a
       > -->
-      <NuxtLink to="/" class="text-current">WemaKeUgames</NuxtLink>
+      <NuxtLink to="/" class="text-current">WemaKeUGames</NuxtLink>
       . Developed by
       <a
         href="https://stoman.me"

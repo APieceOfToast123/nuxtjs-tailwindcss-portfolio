@@ -287,7 +287,7 @@ export const state = () => ({
     {
       id: "TalesOfWheatField",
       title: "TalesOfWheatField",
-      category: "2D",
+      category: "2D/ Stardew Valley-like",
       img: "images/profiles/TWFProfile.png",
       hoverVideo: "videos/TalesOfWheatFieldProfile.mp4",
       publishDate: "May 13, 2024",
@@ -384,11 +384,11 @@ export const state = () => ({
     {
       id: "Hermes",
       title: "Hermes",
-      category: "2D Vertical",
+      category: "2D / Level-pass",
       img: "images/profiles/HermesProfile.jpg",
       hoverVideo: "videos/HermesProfile.mp4",
       publishDate: "May 04, 2023",
-      tag: "2D/Vertical",
+      tag: "2D / Level-pass",
       clientTitle: "Activity",
       objectivesTitle: "Developers",
       objectivesDetails: `
@@ -502,7 +502,7 @@ export const state = () => ({
     {
       id: "SnapAdventure",
       title: "SnapAdventure",
-      category: "2D Mobile Game",
+      category: "2D / Wechat Mini Peogram",
       img: "images/profiles/SnapAProfile.jpg",
       hoverVideo: "videos/SnapAdventureProfile.mp4",
       publishDate: "Dec 23, 2023",
@@ -614,7 +614,7 @@ export const state = () => ({
     {
       id: "PalFight",
       title: "Pal Fight",
-      category: "2D FTG",
+      category: "2D / FTG",
       img: "images/profiles/PFProfile.jpg",
       hoverVideo: "videos/PFProfile.mp4",
       publishDate: "Jan 22, 2024",

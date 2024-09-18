@@ -83,7 +83,48 @@ export default {
           name: 'Hong Shuo',
           title: 'Game Designer & Engineer',
           image: '/teams/HSP.jpg',
-          customContent: ``,
+          customContent: `
+          <div>
+            <p class="mt-2">A Member of Indie Game Production Group</p>
+            <div class="mt-2">
+              <a class="mt-2 flex justify-center" href="https://www.neversufficient.com/gameproject" class="text-blue-500 hover:text-blue-700">
+                <img class="justify-center rounded-lg" src="/teams/info/HS1.png" alt="Never Sufficient" class="w-1/3 cursor-pointer">
+              </a>
+            </div>
+            
+            <p class="mt-4">Web Avaliable Links:</p>
+            <ul>
+              <li class="mt-2"><a href="https://dskhao.itch.io/neko-snake" class="text-blue-500 hover:text-blue-700">Neko Snake</a></li>
+              <li class="mt-2"><a href="https://dskhao.itch.io/dont-touch-me" class="text-blue-500 hover:text-blue-700">Don't Touch Me</a></li>
+              <li class="mt-2"><a href="https://autumnwater.itch.io/bala" class="text-blue-500 hover:text-blue-700">BALA</a></li>
+              <li class="mt-2"><a href="https://dskhao.itch.io/limited-2-space" class="text-blue-500 hover:text-blue-700">Limited 2 Space</a></li>
+              <li class="mt-2"><a href="https://dskhao.itch.io/diggernaut" class="text-blue-500 hover:text-blue-700">Never Sufficient</a></li>
+            </ul>
+
+            <p class="mt-6">Designer and Chief Programmer in a Released Game <em>BALA</em> with 370k Downloads on TapTap</p>
+            <a class="mt-2 flex justify-center" href="https://www.neversufficient.com/gameproject" class="text-blue-500 hover:text-blue-700">
+              <img class="mt-2 w-2/3" src="/teams/info/HS2.png" alt="BALA" class="w-1/3 cursor-pointer">
+            </a>
+
+            <p class="my-4"><em>BALA's</em> Demo: </p>
+            <div class="md-10 px-10 w-full mx-auto">
+              <div class="relative w-full h-auto border border-gray-800 overflow-hidden video-container">
+                <iframe 
+                  class="w-full h-96 aspect-video"
+                  src="https://www.youtube.com/embed/mJBfJpKHYOE" 
+                  scrolling="no" 
+                  frameborder="0" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <p class="inline">👉</p>
+              <a href="https://www.neversufficient.com/gameproject" class="text-blue-500 hover:text-blue-700">More Game Projects?</a>
+            </div>
+          </div>
+          `,
         },
         {
           id: 4,
@@ -91,54 +132,54 @@ export default {
           title: 'Game Designer & Engineer',
           image: '/teams/QYQP.jpg',
           customContent: `
-          <div>
+            <div>
               <p class="mt-2">Cozy Game Maker & King of Isekai Anime</p>
               <p class="mt-2">Love Cozy Games Like <em>Animal Crossing</em>, <em>Zelda</em>, <em>Stardew Valley</em>, <em>Rune Factory</em></p>
               <div>
                 <div class="image-row">
                   <img src="/teams/info/QYQ1.png" alt="Image 1" class="qyq-image-row1" />
                   <img src="/images/profiles/TWFProfile.png" alt="Image 2" class="qyq-image-row1" />
-                  </div>
-                  <style scoped>
-                  .image-row {
-                    display: flex;
-                    justify-content: space-between; 
-                    align-items: center;
-                    margin-top: 20px;
-                    }
-                    .qyq-image-row1 {
-                      width: 48%; 
-                      height: auto;
-                      border-radius: 8px; 
-                      }
-                      </style>
-                      </div>
-                      <p class="my-4">Currently Grad First Year in USC Game Dev</p>
-                      <div>
-                        <div class="image-row">
+                </div>
+                <style scoped>
+                .image-row {
+                  display: flex;
+                  justify-content: space-between; 
+                  align-items: center;
+                  margin-top: 20px;
+                }
+                .qyq-image-row1 {
+                  width: 48%; 
+                  height: auto;
+                  border-radius: 8px; 
+                }
+                </style>
+              </div>
+              <p class="my-4">Currently Grad First Year in USC Game Dev</p>
+              <div>
+                <div class="image-row">
                   <img src="/teams/info/QYQ3.jpg" alt="Image 3" class="qyq-image-row2" />
                   <img src="/teams/info/QYQ4.jpg" alt="Image 4" class="qyq-image-row2" />
                   <img src="/teams/info/QYQ5.jpg" alt="Image 5" class="qyq-image-row2" />
-                  </div>
-                  <style scoped>
+                </div>
+                <style scoped>
                   .image-row {
                     display: flex;
                     justify-content: space-between; 
                     align-items: center;
                     margin-top: 20px;
-                    }
-                    .qyq-image-row2 {
-                      width: 32%; 
-                      height: auto;
-                      border-radius: 8px; 
-                      }
-                      </style>
-                      </div>           
-                      <div class="mt-4">
-                        <p class="inline">👉</p>
-                        <a href="https://qinyuqi.portfoliobox.net/" class="text-blue-500 hover:text-blue-700">View My Portfolio</a>
-                        </div>
-                        </div>`,
+                  }
+                  .qyq-image-row2 {
+                    width: 32%; 
+                    height: auto;
+                    border-radius: 8px; 
+                  }
+                </style>
+              </div>           
+              <div class="mt-4">
+                <p class="inline">👉</p>
+                <a href="https://qinyuqi.portfoliobox.net/" class="text-blue-500 hover:text-blue-700">View My Portfolio</a>
+              </div>
+            </div>`,
         },
         {
           id: 5,

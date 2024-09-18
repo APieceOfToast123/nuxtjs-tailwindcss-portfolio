@@ -4,7 +4,7 @@
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-4 px-6">
       <!-- Logo -->
       <div class="logo text-xl font-bold mb-4 md:mb-0">
-        <NuxtLink to="/" class="text-current">WemaKeUgames</NuxtLink>
+        <NuxtLink to="/" class="text-current">WemaKeUGames</NuxtLink>
       </div>
 
       <!-- Navigation -->
