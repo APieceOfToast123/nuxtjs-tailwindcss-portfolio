@@ -142,6 +142,13 @@
 
         <!-- Single project right section details -->
         <div class="single-project-right w-full sm:w-2/3 text-left mt-10 sm:mt-0">
+          <div v-if="project.playableLink" class="mt-4">
+            <p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
+              Playable Link: 
+              <a :href="project.playableLink" target="__blank" class="text-indigo-500">{{ project.playableLink }}</a>
+            </p>
+          </div>
+
           <!-- Original content -->
           <p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
             style="line-height: 0.7;">

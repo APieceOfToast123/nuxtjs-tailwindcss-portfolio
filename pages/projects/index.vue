@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div class="container mx-auto">
-    <ProjectsGrid />
+    <ProjectsGrid/>
   </div>
 </template>
 

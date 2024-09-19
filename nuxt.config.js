@@ -24,6 +24,16 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/czc.ico" }],
   },
 
+  router: {
+    scrollBehavior(to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition;
+      } else {
+        return { x: 0, y: 0 };
+      }
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["~/assets/app.css"],
 

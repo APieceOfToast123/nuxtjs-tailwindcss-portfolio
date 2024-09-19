@@ -8,26 +8,35 @@ export default {
           {
             id: 1,
             title: "Mobile UI",
-            img: require("@/static/images/mobile-project-1.jpg"),
+            img: require("@/static/images/profiles/IFLLProfile.jpg"),
+            link: "/projects/IFLL",
           },
           {
             id: 2,
             title: "Web Application",
-            img: require("@/static/images/web-project-1.jpg"),
+            img: require("@/static/images/profiles/DTBProfile.png"),
+            link: "/projects/DarkerThanBlack",
           },
           {
             id: 3,
             title: "UI Design",
-            img: require("@/static/images/ui-project-2.jpg"),
+            img: require("@/static/images/profiles/PFProfile.jpg"),
+            link: "/projects/PalFight",
           },
           {
             id: 4,
             title: "Kabul Mobile App UI",
-            img: require("@/static/images/mobile-project-2.jpg"),
+            img: require("@/static/images/profiles/BALAProfile.jpg"),
+            link: "/projects/BALA",
           },
         ],
       },
     };
+  },
+  methods: {
+    goToProject(link) {
+      this.$router.push(link);
+    },
   },
 };
 </script>
@@ -56,10 +65,15 @@ export default {
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-4 gap-10">
-      <div v-for="item in relatedProject.relatedProjects" :key="item.id">
+      <div
+        v-for="item in relatedProject.relatedProjects"
+        :key="item.id"
+        @click="goToProject(item.link)"
+        class="cursor-pointer"
+      >
         <img
           :src="item.img"
-          class="rounded-xl cursor-pointer"
+          class="rounded-xl"
           :alt="item.title"
         />
       </div>
